@@ -19,4 +19,9 @@ public class BaseInfo {
         return String.format("Name: %s Price: %.2f. Count: %.2f. Measure: %s",
                 this.name, this.price, this.count, this.measure);
     }
+
+    // Переопределение метода
+    public String ToString() {
+        return getInfo();
+    }
 }
